@@ -17,6 +17,10 @@ body {
   clear: both;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* HEADER */
 .header .five-square {
   text-align: center;
@@ -88,7 +92,8 @@ body {
 }
 
 .cart {
-  width: 10%;
+  /* width: 10%; */
+  float: right;
 }
 
 .cart a {
@@ -102,7 +107,7 @@ body {
 .order ul {
   /* border: 1px solid red; */
   float: left;
-
+  font-size: 0;
   /* display: flex;
   list-style-type: none;
   justify-content: space-around; */
@@ -110,13 +115,14 @@ body {
 
 .order li {
   /* border: 1px solid blue; */
-  padding: 0 25px;
+  font-size: 16px;
   display: inline-block;
 }
 
 .order a {
   /* border: 1px solid green; */
   display: block;
+  padding: 0 25px;
 }
 
 .order a.active {
@@ -209,7 +215,7 @@ body {
 
 .menu__card img {
   width: 100%;
-  border-radius: 5% 5% 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .menu__card h3 {
@@ -251,7 +257,7 @@ body {
 .menu__button button {
   text-transform: uppercase;
   padding: 15px 10px;
-  border-radius: 10%;
+  border-radius: 10px;
   border: 1px solid black;
   background: white;
   font-weight: bold;
@@ -266,17 +272,17 @@ body {
 }
 
 /* ADS */
-.ads {
-  padding: 30px 0;
-}
+/* .ads {
+  width: 50%;
+} */
 .ads img:first-child {
-  float: left;
-  width: 48%;
+  margin-right: 10px;
+  width: calc(50% - 20px);
 }
 
 .ads img:last-child {
-  float: right;
-  width: 48%;
+  margin-left: 10px;
+  width: calc(50% - 20px);
 }
 
 /* FOOTER */
